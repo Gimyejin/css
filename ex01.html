@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style type="text/css">
+	*{
+		/*color:red;*/
+		/*background-color:yellow;*/
+		font-size:15pt;
+	}
+	/* 태크 선택자*/
+	h1{	background-color:purple;}
+	
+	/* 아이디 선택자*/
+	#a{color:blue;}
+	#b{color:navy;background-color: fuchsia;}
+	
+	/* 클래스 선택자*/
+	.class01{color:navy; background-color:aqua;}
+	label.class01{color:navy; background-color:aqua;}
+	
+	/* 가상 선택자*/
+	h1:hover{background-color:black;}
+	.a:link{color:pink;text-decoration: none;}
+	.a:visited{color:gray}
+	.a:hover{color:black;text-decoration: overline;}
+	.a:active{background-color:yellow;}
+	
+	.div01{width:200px;height: 100px;color: blue; background-color: yellow;opacity: 0.9;}
+	.div01:hover{width: 400px;height: 50px;color: red;background-color: blue;opacity: 0.5;
+				transition:all 1.1s linear 0.5s}
+				
+	nav ul{list-style: none;display: flex; justify-content: flex-end;}
+	nav ul li{margin: 0 13px;padding: 10px 10px;}
+	nav ul li a{text-decoration: none;color: white;}
+	nav ul li a:hover{
+		color:orange; 
+		padding-bottom: 3px;
+		border-bottom: 1px solid orange;
+		transition: all 0.25s;
+	}
+	.div02{overflow:hidden; background-color: blue;height: 100px;}
+	.div02 div{background-color: red;width:200px; height: 200px;color: white;}
+</style>
+</head>
+<body>
+	justify-content: flex-end; < display: flex사용시 오른쪽 정렬을 하고 싶을때 사용<br>
+	<div class="div02">
+		hello<div>css</div>
+		히든:부모를 벗어나는 부분은 숨겨라 <== overflow:hidden;
+	</div>
+	<hr>
+	<nav style="background-color: black;">
+		<ul>
+			<li><a href=""#>Home</a></li>
+			<li><a href=""#>Board</a></li>
+			<li><a href=""#>Membership</a></li>
+		</ul>
+	</nav>
+	display: flex는 가로 정렬
+	<hr>
+	<a href="#">test</a>
+	<div class="div01">가상 클래스를 이용한 애니메이션 효과<br>마우스가 위에 있으면 박스가 늘어나요</div>
+	
+	<hr>
+	<h1>전체 스타일</h1> 
+	<h1 id="a">새롭게 추가된 내용</h1> 
+	<h1 id="b">새롭게 추가된 내용</h1> 
+	<h1 class="class01">새롭게 추가된 내용2</h1> 
+	
+	<label class="class01">그래</label><br>
+	<label>아니</label><br>
+	
+	
+	<hr>
+	<ul>
+		<li>opacity는 농도</li>
+		<li>transition:all 1.1s linear 0.5s</li>
+		=>전체 실행시간은 1.1초 / linear는 0.5초 후에 적용하자
+		<li></li>
+	</ul>
+	
+	<hr>
+	<ul>
+		<li>*{} :현재페이지의 모두 값에 효과를 넣겠다.</li>
+		<li>h1{	background-color:purple;} :특정 태크에 지정하겠다는것</li>
+		<li># 은 아이디 선택자(특정 아이디것을 적용시키겠다는 것)</li>
+		<li>class는 .으로 시작한다.</li>
+		==>id를 사용시 # class를 사용시 .
+		<li>label.class01 은 label중에서 class를 class01로 쓰고 있는 녀석에 적용시키겠다는것</li>
+		<li>h1:hover 는 h1에 마우스가 올라가면 적용하겠다는것</li>
+		<li>a:link{color:pink;text-decoration: none;}</li>
+			링크를 가본적이 없으면 핑크, 링크에 밑줄 지우기
+			
+		<li> display:inline 은 글씨만큼만 영역을 차지하겠다는것 // display: flex를 쓰는중이지만</li>
+		<li></li>
+	</ul>
+	<hr>
+	<h2>가상선택자</h2>
+	
+	<ul>
+	<li>h1:hover 는 h1에 마우스가 올라가면 적용하겠다는것</li>
+		<li>a:link{color:pink;text-decoration: none;}</li>
+			링크를 가본적이 없으면 핑크, 링크에 밑줄 지우기
+			
+		<li>link:방문하지 않았던곳</li>
+		<li>visited:방문한곳</li>
+		<li>hover:마우스 올리면</li>
+		<li>active:클릭 순간</li>
+	</ul>
+	
+	 	
+		
+			
+</body>
+</html>

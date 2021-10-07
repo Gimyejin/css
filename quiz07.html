@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	#wrap{box-sizing: border-box; width: 600px;margin: auto;}
+	header {display: flex;}
+	header img{width: 80px;box-shadow: 10px 10px 15px;}
+	header h1{width:100%; text-align: center;}
+	nav {background-color: gray;margin: 10px 0 -10px 0}
+	nav ul{list-style: none; display: flex; }
+	nav ul li{color: white;margin: 0 0 0 30px;padding: 10px;}
+	.menu:hover{background-color: black;}
+	
+	.main{display: flex;}
+	.main .content1{width: 20%;}
+	.main .content2{width: 50%;}
+	.main .content3{width: 30%;}
+	
+	.content2_ {margin: 0 0 10px 0}
+	.img{width: 100px;height: 100px; }
+	
+	.content3 {margin: 0 0 0 5px;}
+	.content3_ {padding: 0 0 10px 0px;}
+	.content3-1 {display: flex;padding: 0 0 10px 0;}
+	.login_content {width: 116px;height: 24px;order: 1}
+	.login_btn {margin:0 0 0 8px; height: 60px;order: 2}
+	
+</style>
+</head>
+<body>
+	<div id="wrap">
+		<header>
+			<img alt="fall" src="resources/images/맛집.png">
+			<h1><i>맛집 탐방 이야기 ^^</i></h1>
+		</header>
+		<nav>
+			<ul >
+				<li class="menu">Home</li>
+				<li class="menu">게시판</li>
+				<li class="menu">내정보</li>
+			</ul>
+		</nav>
+		<div class="main">
+			<div class="content1">
+				<img src="resources/images/l_정우성.jpg" class="img"><br>
+				<img src="resources/images/l_aside.gif" class="img">
+			</div>
+			<div class="content2">
+				<div><h3 class="h3"><오늘의 맛집></h3></div>
+				<div>
+					<div style="display: flex;"class="content2_">
+						<div style="width: 300px;">오늘 방문한 곳은 맛있는 음식이 나오는 집</div>
+						<img width="50px" height="50px" src="resources/images/맛집01.jpg" >
+					</div>
+					<div style="display: flex;"class="content2_">
+						<div style="width: 300px;">오늘 방문한 곳은 맛있는 음식이 나오는 집</div>
+						<img width="50px" height="50px" src="resources/images/맛집02.jpg" >
+					</div>
+					<div style="display: flex;"class="content2_">
+						<div style="width: 300px;">오늘 방문한 곳은 맛있는 음식이 나오는 집</div>
+						<img width="50px" height="50px" src="resources/images/맛집03.jpg" >
+					</div>
+				</div>
+			</div>
+			<div class="content3">
+				<div class="content3_">
+					<div class="content3-1">
+						<div class="login_content">
+							<input type="text" class="login_content" name="id">
+							<input type="password" class="login_content" name="pw">
+						</div>
+						<input type="submit"value="로그인" class="login_btn">
+					</div>	
+					<a href ="#">회원가입</a>/ <a href ="#">ID/PW찾기</a>
+				</div>
+				<div>
+					<div><h3>오늘의 뉴스</h3></div>
+					<p>날씨 : -32도 <br> 미세먼지 : 농도심함 <br>운세 : 누구보다 좋음</p>
+				</div>
+			</div>
+		</div>
+		<hr>
+		<footer>
+			<b><i><font color="green">CARE LAB</font></b>&nbsp;Copyright&nbsp;&copy;AllRights Reserved</i>
+			&nbsp;&nbsp;&nbsp;&nbsp;&reg; 1999 | 회사소개 | TEL : 777-777
+			
+		</footer>
+	</div>
+</body>
+</html>

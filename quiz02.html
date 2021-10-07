@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>1007퀴즈1</title>
+<style type="text/css">
+	#wrap{width: 650px;margin: auto;}
+	#nav{background-color: pink;display: flex; list-style: none; justify-content: flex-end;}
+	#q1:focus{background-color: green;}
+	#q2:focus{background-color: blue;}
+	#q3:focus{background-color: red;}
+	#q4:focus{background-color: pink;}
+	
+	.nav ul li{background-color: red;margin: 0px 0px 0px 5px; padding: 10px;color: white;}
+	.nav ul li:hover{background-color: skyblue;}
+	a {text-decoration: none;}
+	a:link{color: white;} a:visited{color: white;}
+	img{width: 100%;height: 250px;}
+	
+	.re{color: white;}
+	.click:active + .re{background-color: gray;}
+</style>
+</head>
+<body>
+	<div id="wrap">
+		<div class="nav">
+			<ul id="nav">
+				<li><a href="#num1">1번 문제로 이동</a></li>
+				<li><a href="#num2">2번 문제로 이동</a></li>
+				<li><a href="#num3">3번 문제로 이동</a></li>
+				<li><a href="#num4">4번 문제로 이동</a></li>
+			</ul>
+		</div>
+		<div>
+			<img alt="fall" src="resources/images/quiz.png">
+		</div>
+		<hr>
+		<h3>정답 확인시 정답 보여짐</h3>
+		<hr>
+		<h3 style="color: green" id="num1">문제 1) 정적 언어는?</h3>
+		정답 작성<input type="text" id="q1"> 
+		<label class="click">정답 클릭 확인</label>
+		<label class="re">html, javascript,css 등</label>
+		<hr>
+		<h3 style="color: blue" id="num2">문제 2) 서버 사이드 언어는?</h3>
+		정답 작성<input type="text" id="q2">
+		<label class="click">정답 클릭 확인</label>
+		<label class="re">jsp, django, php 등</label>
+		<hr>
+		<h3 style="color: red" id="num3">문제 3) 프로그래밍 언어는?</h3>
+		정답 작성<input type="text" id="q3"> 
+		<label class="click">정답 클릭 확인</label>
+		<label class="re">java, c, python 등</label>
+		<hr>
+		<h3 style="color: pink" id="num4">문제 4) 클라이언트 사이드 언어는?</h3>
+		정답 작성<input type="text" id="q4">
+		<label class="click">정답 클릭 확인</label>
+		<label class="re">html, javascript,css 등</label>
+		<hr>
+	</div>
+</body>
+</html>
